@@ -1,0 +1,5 @@
+csv_data  = []
+
+CSV.foreach('app/data/TT_ 4 - netflix_titles.csv', headers: true) do |row|
+  csv_data << row.to_hash
+end
